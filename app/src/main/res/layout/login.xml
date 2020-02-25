@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    >
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="30dp"
+        android:src="@drawable/login"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:ems="10"
+            android:id="@+id/etEmail"
+            android:textSize="22sp"
+            android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:ems="10"
+            android:id="@+id/etPassword"
+            android:textSize="22sp"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:id="@+id/btnlogin"
+        android:layout_marginTop="25dp"
+        android:textSize="22sp"
+        android:backgroundTint="@color/buttoncolor"
+        android:background="@drawable/buttonborder"
+        android:textColor="#ffffff"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/buttoncolor"
+        android:text="Register"
+        android:id="@+id/btnsignup"
+        android:layout_marginTop="25dp"
+        android:textSize="22sp"
+        android:background="@drawable/buttonborder"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>

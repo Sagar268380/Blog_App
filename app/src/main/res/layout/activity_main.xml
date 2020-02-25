@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="30dp"
+        android:id="@+id/img_user"
+        android:src="@drawable/login"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:ems="10"
+        android:id="@+id/etName"
+        android:textSize="22sp"
+        android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:ems="10"
+            android:id="@+id/etEmail"
+            android:textSize="22sp"
+            android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:ems="10"
+            android:id="@+id/etPassword"
+            android:textSize="22sp"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter ConformPassword"
+            android:ems="10"
+            android:id="@+id/confPassword"
+            android:textSize="22sp"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/buttoncolor"
+        android:text="Register"
+        android:id="@+id/button4"
+        android:layout_marginTop="25dp"
+        android:textSize="22sp"
+        android:background="@drawable/buttonborder"
+        android:textColor="#ffffff"
+        />
+
+</LinearLayout>
